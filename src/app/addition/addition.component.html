@@ -1,0 +1,16 @@
+<h1>Single Digit Addition</h1>
+
+<!--Fixed Single Digit <input #box (keyup.enter)="fixedSingleDigitInput(box.value)">-->
+
+<h2>{{randomOneDigitNumber1}} + {{randomOneDigitNumber2}} =
+  <input style="font-size: large" #box [(ngModel)]="boxValue" (keyup.enter)="validate(box.value)">
+  <br/><br/>
+  Timer: 60 Secs:
+  <countdown [config]="{template: '$!s!', leftTime: 60}"></countdown>
+  Seconds left!!!
+</h2>
+
+<h2 style="white-space: pre-line">{{message}}</h2>
+
+
+

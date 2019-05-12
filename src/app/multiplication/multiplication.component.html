@@ -1,0 +1,12 @@
+<h1>Single Digit Multiplication upto 20</h1>
+
+<h2>{{randomOneDigitNumber1}} * {{randomOneDigitNumber2}} =
+  <input style="font-size: large" #box [(ngModel)]="boxValue" (keyup.enter)="onEnter(box.value)">
+  <br/><br/>
+  Timer: 60 Secs:
+  <countdown [config]="{template: '$!s!', leftTime: 60}"></countdown>
+  Seconds left!!!
+</h2>
+
+<h2 style="white-space: pre-line">{{message}}</h2>
+
